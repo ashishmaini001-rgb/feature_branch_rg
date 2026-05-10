@@ -10,3 +10,11 @@ terraform {
 provider "azurerm" {
   features {}
 }
+resource "azurerm_resource_group" "block1" {
+  name     = "ashish"
+  location = "West Europe"
+}
+resource "azurerm_resource_group" "block2" {
+  name     = "ankur"
+  location = "West Europe"
+}
